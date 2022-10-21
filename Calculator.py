@@ -1,10 +1,7 @@
-
-
-print('Вітаю в Нашому чат боті')
-
+from math import pow, sqrt, sin, cos, tan, log
 
 def dan():
-    a = int(input('Введіть дію: '))
+    a = int(input('Введіть число a: '))
     b = int(input('Введіть число b: '))
     return a, b
 
@@ -72,7 +69,8 @@ def logarifm():
 
 
 while True:
-    print('''\nДія:\n\t1 Виберіть фільми\n\t2 Виберіть музику\n\t3 Виберіть ігри\n\t0 Вихід\n''')
+    print('''\nДія:\n\t+ Доавання\n\t- Віднімання\n\t* Множення\n\t/ Ділення\n\t^ Зведення в ступінь\n\t/2 Квадратний корінь\
+    \n\t/3 Кубічний корінь\n\tsin Синус\n\tcos Косинус\n\ttan Тангенс\n\tlog Логарифм\n\t0 Вихід\n''')
     choice = input('Введіть дію: ')
     if choice == '+':
         add()
@@ -99,7 +97,6 @@ while True:
     elif choice == '0':
         print('exit')
         break
-
 
 
 
