@@ -21,8 +21,6 @@ while True:
             number = random.randint(1, 100)
             print('Давайте пограємо в гру, ви повинні вгадати моє число в діапазоні 0-10 з 3 спроб')
 
-
-
       elif choice == 0:
             print('exit')
       break
