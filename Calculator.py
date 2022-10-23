@@ -95,7 +95,7 @@ while True:
     elif choice == 'log':
         logarifm()
     elif choice == '0':
-        print('exit')
+        print('exit') 
         break
 
 
