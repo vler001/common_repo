@@ -1,5 +1,6 @@
 from math import pow, sqrt, sin, cos, tan, log
 
+
 def dan():
     a = int(input('Введіть число a: '))
     b = int(input('Введіть число b: '))
