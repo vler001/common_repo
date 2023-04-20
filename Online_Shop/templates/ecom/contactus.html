@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Магазин чая</title>
+
+
+</head>
+
+<body style="background-color: #2ecc71;">
+
+  {%if request.user.is_authenticated%}
+    {% include "ecom/customer_navbar.html" %}
+  {%else%}
+    {% include "ecom/navbar.html" %}
+  {%endif%}
+
+  <center>
+    <h3 class='alert alert-success'>Надішліть нам повідомлення і ми зв'яжемося з Вами !</h3>
+
+    <form method="POST">
+      <!-- Very Important csrf Token -->
+      {% csrf_token %}
+      <div class="form-group" style="color: white;">
+        <p>
+        <h3>{{ form.as_p }}</h3>
+        </p>
+        <br>
+        <input type="submit" value="Надіслати" class='btn btn-danger btn-lg'>
+      </div>
+    </form>
+  </center>
+  {% include "ecom/footer.html" %}
+</body>
+</html>
